@@ -1,0 +1,60 @@
+#N canvas 493 98 1317 1015 12;
+#X text 378 14 turn computer sound down;
+#X text 381 35 dsp on command /;
+#X text 381 59 dsp off command .;
+#X obj 136 357 dac~;
+#X obj 134 301 *~ 0.25;
+#X obj 44 266 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #faff00
+#000000 #000000 0 1;
+#X floatatom 205 212 5 0 0 0 - - - 0;
+#X obj 186 177 hsl 128 15 100 2000 0 0 empty empty empty -2 -8 0 10
+#fcfcfc #000000 #000000 0 1;
+#X msg 48 189 220;
+#X msg 88 188 440;
+#X msg 131 188 880;
+#X obj 134 238 osc~;
+#X msg 8 190 0;
+#X obj 56 158 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 54 117 metro 1000;
+#X obj 54 80 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
+0 1;
+#X obj 145 156 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 143 78 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 233 156 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 231 78 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 16 86 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 14 8 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
+0 1;
+#X obj 143 115 metro 500;
+#X obj 231 115 metro 250;
+#X obj 14 45 metro 10;
+#X floatatom 72 6 5 0 0 0 - - - 0;
+#X connect 4 0 3 0;
+#X connect 4 0 3 1;
+#X connect 5 0 4 1;
+#X connect 6 0 11 0;
+#X connect 7 0 6 0;
+#X connect 8 0 11 0;
+#X connect 9 0 11 0;
+#X connect 10 0 11 0;
+#X connect 11 0 4 0;
+#X connect 12 0 11 0;
+#X connect 13 0 8 0;
+#X connect 14 0 13 0;
+#X connect 15 0 14 0;
+#X connect 16 0 9 0;
+#X connect 17 0 22 0;
+#X connect 18 0 10 0;
+#X connect 19 0 23 0;
+#X connect 20 0 12 0;
+#X connect 21 0 24 0;
+#X connect 22 0 16 0;
+#X connect 23 0 18 0;
+#X connect 24 0 20 0;
+#X connect 25 0 24 1;

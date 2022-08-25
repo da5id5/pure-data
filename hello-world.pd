@@ -1,0 +1,25 @@
+#N canvas 0 0 1680 1022 12;
+#X text 336 242 hello world example;
+#X obj 200 341 print;
+#X msg 205 291 hello world;
+#X obj 205 223 metro 1000;
+#X obj 204 165 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X msg 84 137 0;
+#X msg 135 137 1;
+#X msg 80 174 stop;
+#X obj 239 163 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X floatatom 272 124 5 0 0 0 - - - 0;
+#X obj 353 31 vsl 15 128 100 2000 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X text 337 284 prints hello world to console;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 0;
+#X connect 6 0 3 0;
+#X connect 7 0 3 0;
+#X connect 8 0 3 0;
+#X connect 9 0 3 1;
+#X connect 10 0 9 0;
